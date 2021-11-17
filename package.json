@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && ecstatic public",
+    "start": "npm run build && npx wranger pages dev ./public",
     "build": "cp src/index.html public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

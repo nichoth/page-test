@@ -9,10 +9,10 @@
 <body>
     <div id="content">hello</div>
     <script>
-        fetch('/functions/time')
+        fetch('/time')
             .then(async res => {
                 var t = await res.text()
-                document.getElementById('content').innerHTML = t
+                document.getElementById('content').innerHTML += t
             })
     </script>
 </body>

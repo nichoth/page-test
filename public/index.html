@@ -7,9 +7,9 @@
     <title>testing</title>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">hello</div>
     <script>
-        fetch('/hello')
+        fetch('/functions/time')
             .then(async res => {
                 var t = await res.text()
                 document.getElementById('content').innerHTML = t
