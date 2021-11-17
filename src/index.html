@@ -12,7 +12,7 @@
         fetch('/hello')
             .then(async res => {
                 var t = await res.text()
-                document.body.getElementById('content').innerHTML = t
+                document.getElementById('content').innerHTML = t
             })
     </script>
 </body>
